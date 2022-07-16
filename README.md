@@ -1,6 +1,6 @@
 # introduction_pages
 
-A new Flutter project.
+An introduction Page with Flutter.
 
 ## Getting Started
 
