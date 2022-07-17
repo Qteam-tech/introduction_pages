@@ -1,7 +1,8 @@
+// ignore_for_file: depend_on_referenced_packages
+
 import 'package:flutter/material.dart';
 import 'package:introduction_pages/message.dart';
 import 'package:grouped_list/grouped_list.dart';
-import 'package:intl/intl.dart';
 import 'package:chat_bubbles/chat_bubbles.dart';
 
 class HomePage extends StatefulWidget {
@@ -74,10 +75,11 @@ class _HomePageState extends State<HomePage> {
           itemBuilder: (context, Message message) => BubbleSpecialThree(
             text: message.text,
             tail: true,
+            seen: message.isSentByMe,
             isSender: message.isSentByMe,
             color: message.isSentByMe
                 ? Colors.blue
-                : Color.fromARGB(255, 236, 234, 234),
+                : const Color.fromARGB(255, 236, 234, 234),
           ),
         )),
         Container(
