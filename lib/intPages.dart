@@ -51,7 +51,7 @@ class _IntPagesState extends State<IntPages> {
                     onTap: () {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) {
-                        return const HomePage();
+                        return HomePage();
                       }));
                     },
                     child: const Text('Done',
