@@ -16,11 +16,11 @@ class _HomePageState extends State<HomePage> {
   List<Message> messages = [
     Message(
         text: 'Hi, ',
-        date: DateTime.now().subtract(const Duration(minutes: 6)),
+        date: DateTime.now().subtract(const Duration(days: 6)),
         isSentByMe: false),
     Message(
         text: 'Hi, can I help You.',
-        date: DateTime.now().subtract(const Duration(minutes: 5)),
+        date: DateTime.now().subtract(const Duration(days: 5)),
         isSentByMe: true),
     Message(
         text: 'Yeah, of course could you please inform me about your services.',
@@ -32,11 +32,11 @@ class _HomePageState extends State<HomePage> {
         isSentByMe: false),
     Message(
         text: 'I am trying to use backend flutter app',
-        date: DateTime.now().subtract(const Duration(days: 3)),
+        date: DateTime.now().subtract(const Duration(days: 1)),
         isSentByMe: false),
     Message(
         text: 'So lets start. and go straight to the projects.',
-        date: DateTime.now().subtract(const Duration(days: 3)),
+        date: DateTime.now().subtract(const Duration(days: 1)),
         isSentByMe: true),
   ].reversed.toList();
 

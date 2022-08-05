@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'intPages.dart';
 
 void main(List<String> args) {
